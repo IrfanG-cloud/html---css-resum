@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Rubik" , sans-serif ;
+}
+
+/* navigation */
+.nav-container{
+    width: 1440px;
+    height: 535px;
+    top: -2px;
+    background: #F7F7F7;
+}
+.nav-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left:74px;
+}
+.nav-item {
+    position: absolute;
+    height: 28px;
+    left: 600px;
+    top: 30px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+nav ul{
+    display: flex;
+}
+nav .logo  {
+    font-family: Scada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+}
+.nav-item li{
+    list-style: none;
+    margin-right: 30px;
+}
+nav ul li a{
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+}
+nav ul li a:visited {
+    color: #1D1C1C;
+}
+nav ul li a:hover {
+    color: #3E97FF;
+
+}
+
+/* header */
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-wrapper h1{
+    color: #1D1C1C;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 320px;
+    line-height: 379px;
+}
+.header-wrapper p{
+    position: absolute;
+    width: 393px;
+    height: 44px;
+    left: 850px;
+    top: 387px;
+    color: #3E97FF;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+/* content */
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about h1{
+    position: absolute;
+    width: 256px;
+    height: 111px;
+    top: 574px;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 95px;
+    color: #000000;
+
+}
+.about p{
+    position: absolute;
+    width: 741px;
+    height: 288px;
+    top: 685px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;;
+    color: #989898;
+    font-family: Rubik;
+    font-style: normal;
+}
+.about-image{
+    display:flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+image{
+    background: url(IMG-20210405-WA0064.jpg);
+}
+
+/* experience */
+
+.experience h1{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 83px;
+}
+.experience p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    width: 249px;
+    height: 30px;
+    color: #1D1C1C;
+}
+.experience .zigron p{
+    color: #1D1C1C;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    width: 350px;
+    height: 30px;
+}
+.experience .zigron p{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.content-company{
+    display:flex;
+}
+.content-company .company1{
+    width: 249px;
+    height: 28px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3E97FF;
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+.content-company .company{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 5px 50px 5px 50px;
+    color: #1D1C1C;
+}
+
+.zigron-li li{
+    font-weight: 300;
+font-size: 16px;
+line-height: 40px;
+width: 1029px;
+}
+/*--Education--*/
+
+.experience h1{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 83px;
+    margin-top: 50px;
+}
+
+.experience .education p{
+    width: 550px;
+    height: 30px;
+    font-size: 16px;
+    color: #1D1C1C;
+    margin-top:5px;
+}
+
+.experience .tech-skills p{
+    width: 700px;
+    height: 25px;
+    font-size: 16px;
+    color: #1D1C1C;
+    margin-top: 10px;
+}
+
+/*-- footer --*/
+.footer-bg{
+    background: #F7F7F7;
+    width: 1440px;
+    height: 50px;
+    padding:20px;
+    text-align: center;
+    margin-top:30px;
+}
+.footer-bg p{
+    color: #888888;
+    font-size: 18px;
+}
