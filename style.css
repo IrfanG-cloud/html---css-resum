@@ -8,13 +8,13 @@ body{
 
 /* navigation */
 .nav-container{
-    width: 1440px;
+    width: 100%;
     height: 535px;
     top: -2px;
     background: #F7F7F7;
 }
 .nav-wrapper{
-    max-width: 1200px;
+
     margin: 0 auto;
     margin-left:74px;
 }
@@ -31,11 +31,10 @@ nav ul{
     display: flex;
 }
 nav .logo  {
-    font-family: Scada;
-    font-style: normal;
     font-weight: bold;
     font-size: 50px;
     line-height: 62px;
+    color: #3E97FF;
 }
 .nav-item li{
     list-style: none;
@@ -45,6 +44,7 @@ nav ul li a{
     font-size: 24px;
     line-height: 28px;
     text-decoration: none;
+    color: #1D1C1C;
 }
 nav ul li a:visited {
     color: #1D1C1C;
@@ -61,7 +61,8 @@ header{
     justify-content: center;
 }
 .header-wrapper{
-    max-width: 1200px;
+
+
     margin: 0 auto;
 }
 .header-wrapper h1{
@@ -97,12 +98,12 @@ header{
     font-weight: 600;
     font-size: 80px;
     line-height: 95px;
-    color: #000000;
+    color: #3E97FF;
 
 }
 .about p{
     position: absolute;
-    width: 741px;
+    width: 791px;
     height: 288px;
     top: 685px;
     font-weight: 300;
@@ -115,10 +116,12 @@ header{
 .about-image{
     display:flex;
     justify-content: right;
-    margin-top: 30px;
+    margin-top: 20px;
+    padding-top: 90px;
 }
 image{
     background: url(IMG-20210405-WA0064.jpg);
+    
 }
 
 /* experience */
@@ -127,6 +130,7 @@ image{
     font-weight: 600;
     font-size: 70px;
     line-height: 83px;
+    color: #3E97FF;
 }
 .experience p{
     font-weight: 500;
@@ -182,18 +186,19 @@ width: 1029px;
     font-size: 70px;
     line-height: 83px;
     margin-top: 50px;
+    color: #3E97FF;
 }
 
 .experience .education p{
-    width: 550px;
+    width: 100%;
     height: 30px;
     font-size: 16px;
     color: #1D1C1C;
-    margin-top:5px;
+    margin-top:10px;
 }
 
 .experience .tech-skills p{
-    width: 700px;
+    width: 100%;
     height: 25px;
     font-size: 16px;
     color: #1D1C1C;
@@ -203,7 +208,7 @@ width: 1029px;
 /*-- footer --*/
 .footer-bg{
     background: #F7F7F7;
-    width: 1440px;
+    width: 100%;
     height: 50px;
     padding:20px;
     text-align: center;
@@ -212,4 +217,271 @@ width: 1029px;
 .footer-bg p{
     color: #888888;
     font-size: 18px;
+}
+
+
+/* -- responisve -- */
+
+.mobile-nav,
+.menu-btn,
+.close-btn {
+    display:none;
+
+}
+
+/*-- media query --*/
+@media(max-width:800px) {
+    .nav-item{
+        display: none;
+    }
+
+    .menu-btn, .close-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .close-btn{
+        display: none;
+        z-index: 1000;
+    }
+
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top:500px;
+        left:0;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        flex-direction: column;
+        padding:0;
+        pointer-events:none;
+        opacity: 0;
+        transition: all .4s;
+    }
+    .mobile-nave.active {
+        opacity:1;
+        top:0;
+        pointer-events: auto;
+    }
+    .mobile-nav li {
+        margin: 16px 8px;
+    }
+
+    .mobile-nav li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        position: realtive;
+    }
+    .mobile-nav li a:before{
+        content: "";
+        width:100%;
+        position: absolute;
+        top: -12px;
+        border-top: 1px solid white;
+
+    }
+
+    /*-- header --*/
+    .nav-container{
+        width: auto;
+        height: auto;
+    }
+    .header-wrapper{
+
+    }
+    header .header-content{
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .header-content h1{
+        font-weight: 150;
+        font-size: 150px;
+        line-height: 170px;
+    }
+
+    header .header-content p{
+        width: auto;
+        height: auto;
+        left: 200px;
+        top: 230px;
+        color: #3E97FF;
+        font-size: 30px;
+        align-items: center;
+    }
+
+    
+/* navigation */
+.nav-container{
+    width: auto;
+    height: 290px;
+    top: -2px;
+    background: #F7F7F7;
+}
+.nav-wrapper{
+    width: auto;
+    margin:0px;
+    padding: 0px 10px 0px 10px;
+
+}
+.nav-item {
+    position: absolute;
+    height: 28px;
+    left: 600px;
+    top: 30px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+nav ul{
+    display: flex;
+}
+nav .logo  {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+}
+.nav-item li{
+    list-style: none;
+    margin-right: 30px;
+}
+nav ul li a{
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+}
+nav ul li a:visited {
+    color: #1D1C1C;
+}
+nav ul li a:hover {
+    color: #3E97FF;
+
+}
+    /* content */
+
+.content{
+    max-width: auto;
+    margin: 0 auto;
+}
+.about{
+    width: auto;
+    height: auto;
+    margin:0px;
+    padding: 0px 10px 0px 10px;
+}
+.about h1{
+    top: 310px;
+    font-weight:400;
+    font-size: 50px;
+    line-height: 45px;
+    color: #3E97FF;
+
+
+}
+.about p{
+    width: auto;
+    height: auto;
+    top: 375px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #989898;
+}
+.about-image{
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top:210px;
+}
+image{
+    background: url(IMG-20210405-WA0064.jpg);
+
+}
+
+/* experience */
+.experience{
+    width: auto;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+}
+.experience h1{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 20px;
+}
+.experience p{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1D1C1C;
+}
+.zigron p{
+    color: #1D1C1C;
+    font-weight: 400;
+    font-size: 1px;
+    line-height: 28px;
+
+}
+.experience .zigron p{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: auto;
+}
+.content-company{
+    display:flex;
+}
+
+.content-company .company1{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3E97FF;
+    width: auto;
+    padding-right: 20px;
+}
+.content-company .company{
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 30px;
+    color: #1D1C1C;
+    padding:3px;
+    
+}
+
+.zigron-li li{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+    width: auto;
+}
+
+.experience .education p{
+    font-size: 16px;
+    color: #1D1C1C;
+    padding-top: 20px;
+    line-height: 5px;
+    margin-top: 0px;
+}
+.experience .tech-skills p{
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    color: #1D1C1C;
+}
+/*-- footer --*/
+.footer-bg{
+    background: #F7F7F7;
+    width:auto;
+    justify-content: center;
+    height: 35px;
+    padding-top:10px;
+    margin-top: 20px;
+    width: auto;
+}
+.footer-bg p{
+    color: #888888;
+    font-size: 14px;   
 }
